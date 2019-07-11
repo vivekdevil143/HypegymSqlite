@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Fragment.WorkoutTimeFragment">
+
+
+   <include
+       layout="@layout/toolbar_layout"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtdayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+        android:text="DayName"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdayname"
+        android:layout_marginTop="20dp"
+        android:padding="9dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_timer" />
+
+               <TextView
+                    android:id="@+id/intime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/image1"
+                    android:text="00:00am"
+
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+              <!--  <EditText
+                    android:id="@+id/intime"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:hint="InTime"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_height="wrap_content" />-->
+
+                <TextView
+                    android:id="@+id/txtintime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/intime"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/image1"
+                    android:text="Intime"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_timer" />
+
+               <TextView
+                    android:id="@+id/outtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="00:00am"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+
+<!--
+                <EditText
+                    android:id="@+id/outtime"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:hint="OutTime"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_height="wrap_content" />
+-->
+
+                <TextView
+                    android:id="@+id/txtouttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/outtime"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="Outtime"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relaive_layout_desp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:padding="9dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/desp_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/relaive_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear_layout">
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Description"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+                <EditText
+
+                    android:id="@+id/edittextdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_toRightOf="@+id/description"
+                    android:backgroundTint="#000"
+                    android:inputType="text|textMultiLine"
+                    android:textColor="#000" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relaive_layout_desp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Submit"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/viewuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="View User details"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
+</RelativeLayout>

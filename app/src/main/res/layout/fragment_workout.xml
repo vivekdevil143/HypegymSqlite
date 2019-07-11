@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#000"
+    tools:context=".Fragment.WorkoutFragment">
+
+    <include layout="@layout/toolbar_layout"></include>
+
+
+    <Button
+        android:id="@+id/dayschedular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Day Schedular" />
+
+    <Button
+        android:id="@+id/workout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayschedular"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="WorkOut" />
+
+
+    <Button
+        android:id="@+id/dietplanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workout"
+        android:layout_marginTop="50dp"
+        android:text="DietPlanner" />
+
+
+</RelativeLayout>

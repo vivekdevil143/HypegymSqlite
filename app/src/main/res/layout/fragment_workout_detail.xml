@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#000"
+    tools:context=".Fragment.WorkoutDetailFragment">
+
+    <include
+        layout="@layout/toolbar_layout"></include>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_monday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Monday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/monday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/cardview_monday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tuesday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tuesday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:cardCornerRadius="15dp"
+        android:layout_below="@+id/cardview_tuesday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Wednesday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wednesday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cardview_thursday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardview_wednesday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Thursday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/thursday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cardview_friday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/cardview_thursday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Friday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/friday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cardview_saturday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardview_friday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Saturday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/saturday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+android:id="@+id/cardview_sunday"
+        app:cardCornerRadius="15dp"
+        android:layout_below="@+id/cardview_saturday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Sunday"
+                android:textColor="#08f20f"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/sunday"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="1dp"
+                android:text="1pm-5pm"
+                android:textColor="#08f20f"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
